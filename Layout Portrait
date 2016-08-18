@@ -1,0 +1,35 @@
+Layout Portrait, y su fondo configurado
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondobra"/>
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_marginTop="65dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:textColor="@color/White"
+        android:text="@string/titulo" />
+    <Button
+        android:id="@+id/btnBoton"
+        android:layout_marginTop="55dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnName"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvTitulo"
+        android:theme="@style/AppTheme.Button"/>
+
+</RelativeLayout>
